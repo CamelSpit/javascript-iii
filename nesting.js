@@ -36,7 +36,20 @@ var employees = [{
 //  2. If the employee's first name is Lorie, change her department to 'HR'.
 //  3. Return the updated employee array.
 
-// Code here
+function employeeUpdater () {
+  employees.forEach(object => {
+    if (object.firstName === "Theo"){
+      var index = employees.indexOf(object);
+      console.log(index);
+      employees.splice(index,1);
+    }
+    if (object.firstName === "Lorie") {
+      object.department = "HR";
+    }
+  })
+  console.log(employees);
+  return employees;
+}
 
 
 
@@ -54,7 +67,16 @@ var employees = [{
 
 var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 
-// Code here
+function removeDuplicates (array){
+  for (var i= array.length-1; i>=0; i--) {
+    for (var k=0; k<i-1; k++) {
+        if (array[i] === array[k]) {
+          array.splice(i,1);
+        }
+    }
+  }
+  return array;
+}
 
 
 
