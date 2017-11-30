@@ -79,14 +79,6 @@ function removeDuplicates (array){
 }
 
 
-
-
-
-
-
-
-
-
 // === PROBLEM 3 ==========
 
 var cat = {
